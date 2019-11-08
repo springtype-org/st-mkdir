@@ -7,3 +7,5 @@ dist
 .yarnrc
 .yarnrc*
 yarn-error.log
+/.idea/
+/node_modules/

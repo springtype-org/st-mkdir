@@ -16,7 +16,6 @@ export const mkdir = (directory: string) => {
         const junks = _directory.split(path.sep);
         let growingDirectory = '';
         for (const junk of junks) {
-            console.log(growingDirectory);
             growingDirectory += junk + path.sep;
             execSync(`mkdir ${path.resolve(process.cwd(), growingDirectory)}`);
         }
