@@ -14,7 +14,7 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@types/node@^12.11.7":
+"@types/node@^12.12.6":
   version "12.12.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.6.tgz#a47240c10d86a9a57bb0c633f0b2e0aea9ce9253"
   integrity sha512-FjsYUPzEJdGXjwKqSpE0/9QEh6kzhTAeObA54rn6j3rR4C/mzpI9L0KNfoeASSPMMdxIsoJuCLDWcM/rVjIsSA==
@@ -230,7 +230,7 @@ node-bin-setup@^1.0.0:
   resolved "https://registry.yarnpkg.com/node-bin-setup/-/node-bin-setup-1.0.6.tgz#4b5c9bb937ece702d7069b36ca78af4684677528"
   integrity sha512-uPIxXNis1CRbv1DwqAxkgBk5NFV3s7cMN/Gf556jSw6jBvV7ca4F9lRL/8cALcZecRibeqU+5dFYqFFmzv5a0Q==
 
-node@^12.12.0:
+node@^12.13.0:
   version "12.13.0"
   resolved "https://registry.yarnpkg.com/node/-/node-12.13.0.tgz#9702970a7038dc19f83a8c63f4486719fd877f0e"
   integrity sha512-quDNTkbEEXCuDQNXX0B3faD17s1ggJ7MpdhqQKiOnvy0jooaDHSJ079pP+MfOzRkujcJgEHNIA0/G2imOGZImg==
@@ -322,6 +322,13 @@ shebang-regex@^3.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
+st-cp@^2.0.0-alpha.4:
+  version "2.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/st-cp/-/st-cp-2.0.0-alpha.4.tgz#5681c536168fbaf5257aff07020004eabd79b2d2"
+  integrity sha512-MwQWv5+6iqjSPCaYUl326B2pKfRsXx2SOddL6/odWNvIIYY4pT5wul+LIJaFwNdwRRAUHmfbpTpfqh0Qyq6k7A==
+  dependencies:
+    chalk "^2.4.2"
+
 st-rm-rf@^1.0.0-alpha.1.42:
   version "1.0.0-beta"
   resolved "https://registry.yarnpkg.com/st-rm-rf/-/st-rm-rf-1.0.0-beta.tgz#67d0e5218af526bdc622dbb600aa2fdd7ef06537"
@@ -337,6 +344,13 @@ st-rm-rf@^2.0.0-alpha.1:
   dependencies:
     chalk "^2.4.2"
 
+st-rm-rf@^2.0.0-alpha.5, st-rm-rf@^2.0.0-alpha.8:
+  version "2.0.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/st-rm-rf/-/st-rm-rf-2.0.0-alpha.8.tgz#4aa761378d4d7bae2dd6fe19516401cddd4c6c50"
+  integrity sha512-gIdb2lZdsHjtZ9nBMrAYnfiuyO1QEqwdH3QBc8jR2QCq92AOxFdhESt3u5TDWIRuwxA/T+oFmS2x3HPUQaeuqA==
+  dependencies:
+    chalk "^2.4.2"
+
 st-run@2.0.0-alpha.13:
   version "2.0.0-alpha.13"
   resolved "https://registry.yarnpkg.com/st-run/-/st-run-2.0.0-alpha.13.tgz#6cbe012dab05bdc7df17d38aee2b74f7baa67236"
@@ -348,16 +362,27 @@ st-run@2.0.0-alpha.13:
     st-rm-rf "^2.0.0-alpha.1"
     st-run "2.0.0-alpha.4"
 
-st-run@2.0.0-alpha.14:
-  version "2.0.0-alpha.14"
-  resolved "https://registry.yarnpkg.com/st-run/-/st-run-2.0.0-alpha.14.tgz#df00a6469db97c8325e2ebdf7cb908267deeb956"
-  integrity sha512-hn+TusTIA6PnBPb31Agi9vPF8JnkjUnwLDG/qQKLENNo9C8kkTXbL2lBMD6ty9Po9L7JtQ1Or7YGSkbA39ejIQ==
+st-run@2.0.0-alpha.15:
+  version "2.0.0-alpha.15"
+  resolved "https://registry.yarnpkg.com/st-run/-/st-run-2.0.0-alpha.15.tgz#d7a77cf922034ea2f7143a5cffbcd462e3b133d9"
+  integrity sha512-WjuBO+y9iVgZZL/gX5aRYVsBcT+A4gXJWB9TLBjnW+YyASA/gTtRQbhzSZ83FFS9m0BSYbPtqm+Ym06swXCUtw==
   dependencies:
     chalk "^2.4.2"
     cross-spawn "^7.0.1"
     public-ip "^3.2.0"
     st-rm-rf "^2.0.0-alpha.1"
     st-run "2.0.0-alpha.13"
+
+st-run@2.0.0-alpha.17:
+  version "2.0.0-alpha.17"
+  resolved "https://registry.yarnpkg.com/st-run/-/st-run-2.0.0-alpha.17.tgz#2d5fe558275e41e3eb27bc8a99ee05477cde541e"
+  integrity sha512-o3uAw3sbyzteQ2UuYAyOm8tuHytojSAqXn2bPFexO6qmPa/c+Zlu4nSxQdzS2R5nU6w3v0HzOy4krETQfF0zlg==
+  dependencies:
+    chalk "^2.4.2"
+    cross-spawn "^7.0.1"
+    public-ip "^3.2.0"
+    st-rm-rf "^2.0.0-alpha.1"
+    st-run "2.0.0-alpha.15"
 
 st-run@2.0.0-alpha.2:
   version "2.0.0-alpha.2"
@@ -368,6 +393,17 @@ st-run@2.0.0-alpha.2:
     cross-spawn "^7.0.1"
     public-ip "^3.2.0"
     st-rm-rf "^1.0.0-alpha.1.42"
+
+st-run@2.0.0-alpha.23:
+  version "2.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/st-run/-/st-run-2.0.0-alpha.23.tgz#89d42b09741f9eae2f44931ce49189d66704f900"
+  integrity sha512-GST+SRytU7hFoXZn4OOVNvsodWuOBThoQ0fFV6Jo5GfcK6GsiGCnqInw4Rj1Z0H3zu/tHHwXV9BSyHCUyvgebw==
+  dependencies:
+    chalk "^2.4.2"
+    cross-spawn "^7.0.1"
+    public-ip "^3.2.0"
+    st-rm-rf "^2.0.0-alpha.5"
+    st-run "2.0.0-alpha.17"
 
 st-run@2.0.0-alpha.4:
   version "2.0.0-alpha.4"
@@ -392,7 +428,7 @@ to-readable-stream@^1.0.0:
   resolved "https://registry.yarnpkg.com/to-readable-stream/-/to-readable-stream-1.0.0.tgz#ce0aa0c2f3df6adf852efb404a783e77c0475771"
   integrity sha512-Iq25XBt6zD5npPhlLVXGFN3/gyR2/qODcKNNyTMd4vbm39HUaOiAM4PMq0eMVC/Tkxz+Zjdsc55g9yyz+Yq00Q==
 
-typescript@^3.3.4000:
+typescript@^3.7.2:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.2.tgz#27e489b95fa5909445e9fef5ee48d81697ad18fb"
   integrity sha512-ml7V7JfiN2Xwvcer+XAf2csGO1bPBdRbFCkYBczNZggrBZ9c7G3riSUeJmqEU5uOtXNPMhE3n+R4FA/3YOAWOQ==

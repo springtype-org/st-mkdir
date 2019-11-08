@@ -1,6 +1,6 @@
 {
   "name": "st-mkdir",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.4",
   "publishConfig": {
     "access": "public"
   },
@@ -15,7 +15,9 @@
     "url": "git+https://github.com/springtype-org/springtype.git"
   },
   "scripts": {
-    "build": "st-run st-rm-rf dist ++ system:tsc ++ st-cp README.md package.json node_modules dist"
+    "prebuild": "st-rm-rf dist",
+    "build": "tsc",
+    "postbuild": "st-cp README.md package.json node_modules dist"
   },
   "engines": {
     "node": ">=10"
@@ -35,12 +37,14 @@
   },
   "homepage": "https://springtype.org",
   "dependencies": {
-    "chalk": "^2.4.2"
+    "chalk": "^2.4.2",
+    "st-cp": "^2.0.0-alpha.4",
+    "st-rm-rf": "^2.0.0-alpha.8"
   },
   "devDependencies": {
-    "@types/node": "^12.11.7",
-    "node": "^12.12.0",
-    "typescript": "^3.3.4000",
-    "st-run": "2.0.0-alpha.14"
+    "@types/node": "^12.12.6",
+    "node": "^12.13.0",
+    "st-run": "2.0.0-alpha.23",
+    "typescript": "^3.7.2"
   }
 }
