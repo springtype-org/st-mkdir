@@ -1,19 +1,6 @@
-import {execSync} from "child_process";
-import {existsSync} from "fs";
-import * as path from "path";
+import { abstractMkDir } from "./st-mkdir-abstract";
+import { DIR_WILDCARD } from "./st-mkdir";
 
-export const mkdir = (directory: string) => {
-    const linuxDirectory = path.relative(process.cwd(), directory);
-    const junks = linuxDirectory.split(path.sep);
-    let growingDirectory = "";
-    for (const junk of junks) {
-        growingDirectory += junk + path.sep;
-
-        const folderToCreate = path.resolve(process.cwd(), growingDirectory);
-
-        if (!existsSync(folderToCreate)) {
-            execSync(`mkdir ${folderToCreate}`);
-        }
-    }
-
+export const mkdir = (dir: string) => {
+    abstractMkDir(dir, `mkdir ${DIR_WILDCARD}`);
 };

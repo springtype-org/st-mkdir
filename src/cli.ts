@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import chalk from "chalk";
 import { mkdir } from "./function/st-mkdir";
 

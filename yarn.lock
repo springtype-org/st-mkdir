@@ -57,6 +57,39 @@ node@^12.13.0:
   dependencies:
     node-bin-setup "^1.0.0"
 
+st-cp@^2.0.0-alpha.4:
+  version "2.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/st-cp/-/st-cp-2.0.0-alpha.4.tgz#5681c536168fbaf5257aff07020004eabd79b2d2"
+  integrity sha512-MwQWv5+6iqjSPCaYUl326B2pKfRsXx2SOddL6/odWNvIIYY4pT5wul+LIJaFwNdwRRAUHmfbpTpfqh0Qyq6k7A==
+  dependencies:
+    chalk "^2.4.2"
+
+st-mkdir@^1.0.0-alpha.4:
+  version "1.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/st-mkdir/-/st-mkdir-1.0.0-alpha.4.tgz#11b8857c307cbd6c20761adaf3d70a688b8ed4f9"
+  integrity sha512-P2044vhpmTcbycONBbzazjvlrVUtWPIRQaLJRofmR9NSe9INgArWoZSD4/WBiw16lVxP0GOAryZA1zCTeOsPgg==
+  dependencies:
+    chalk "^2.4.2"
+    st-cp "^2.0.0-alpha.4"
+    st-rm-rf "^2.0.0-alpha.8"
+
+st-rm-rf@^2.0.0-alpha.8:
+  version "2.0.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/st-rm-rf/-/st-rm-rf-2.0.0-alpha.8.tgz#4aa761378d4d7bae2dd6fe19516401cddd4c6c50"
+  integrity sha512-gIdb2lZdsHjtZ9nBMrAYnfiuyO1QEqwdH3QBc8jR2QCq92AOxFdhESt3u5TDWIRuwxA/T+oFmS2x3HPUQaeuqA==
+  dependencies:
+    chalk "^2.4.2"
+
+st-run@^2.0.0-alpha.31:
+  version "2.0.0-alpha.31"
+  resolved "https://registry.yarnpkg.com/st-run/-/st-run-2.0.0-alpha.31.tgz#e22828d9fce3ed3042c46a7b3f013b5952449070"
+  integrity sha512-kIqzsL/345lcTojU7wkliBZhMt2fVLA6M0EVl9O21B6W8zkNPlrYKSyjG/YQg2DhPmC6OlqkhysqNs9MTTDRvQ==
+  dependencies:
+    chalk "^2.4.2"
+    st-cp "^2.0.0-alpha.4"
+    st-mkdir "^1.0.0-alpha.4"
+    st-rm-rf "^2.0.0-alpha.8"
+
 supports-color@^5.3.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"

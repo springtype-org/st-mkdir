@@ -1,6 +1,6 @@
 {
   "name": "st-mkdir",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "publishConfig": {
     "access": "public"
   },
@@ -9,7 +9,7 @@
     "st-mkdir",
     "mkdir"
   ],
-  "description": "CLI tool for platform independent recursive creating directories.",
+  "description": "CLI tool for platform independent recursive creating directories",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/springtype-org/springtype.git"
@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@types/node": "^12.12.6",
+    "st-run": "^2.0.0-alpha.31",
     "node": "^12.13.0",
     "typescript": "^3.7.2"
   }
