@@ -15,9 +15,7 @@
     "url": "git+https://github.com/springtype-org/springtype.git"
   },
   "scripts": {
-    "prebuild": "st-rm-rf dist",
-    "build": "tsc",
-    "postbuild": "st-cp README.md package.json node_modules dist"
+    "build": "st-run st-rm-rf dist ++ system:tsc ++ st-cp README.md package.json node_modules dist"
   },
   "engines": {
     "node": ">=10"
@@ -26,7 +24,7 @@
     "chalk"
   ],
   "bin": {
-    "st-rm-rf": "./cli.js"
+    "st-mkdir": "./cli.js"
   },
   "main": "index.js",
   "types": "index.d.ts",
@@ -37,14 +35,11 @@
   },
   "homepage": "https://springtype.org",
   "dependencies": {
-    "chalk": "^2.4.2",
-    "st-cp": "^2.0.0-alpha.4",
-    "st-rm-rf": "^2.0.0-alpha.8"
+    "chalk": "^2.4.2"
   },
   "devDependencies": {
     "@types/node": "^12.12.6",
     "node": "^12.13.0",
-    "st-run": "2.0.0-alpha.23",
     "typescript": "^3.7.2"
   }
 }
