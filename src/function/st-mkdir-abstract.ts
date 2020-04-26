@@ -11,7 +11,7 @@ export const abstractMkDir = (dir: string, mkdirCommand: string) => {
     let subDir = "";
 
     for (const chunk of chunks) {
-        
+
         subDir += chunk + path.sep;
 
         const absoluteSubDir = path.resolve(process.cwd(), subDir);

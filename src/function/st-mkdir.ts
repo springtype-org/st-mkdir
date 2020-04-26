@@ -1,4 +1,5 @@
-import chalk from "chalk";
+
+const chalk = require('chalk');
 import { platform } from "os";
 import { mkdir as mkdirWindows } from "./st-mkdir-windows";
 import { mkdir as mkdirLinux } from "./st-mkdir-linux";

@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-
-import chalk from "chalk";
+const chalk = require('chalk');
 import { mkdir } from "./function/st-mkdir";
 
 const directoriesToCreate = process.argv.slice(2);
